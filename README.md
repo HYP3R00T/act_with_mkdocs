@@ -29,7 +29,11 @@ When we install it, it will create a `bin` folder in the current working directo
 ### Execution
 
 - Create a pipeline in `.github/workflows` directory.
-- Presuming you only have one pipeline for now, simply run `act` from the terminal, in your project directory.
+- Use the following to run it locally.
+
+```shell
+act -W .github/workflows/mkdocs_test.yml
+```
 
 It will use Docker to pull all required images and run the pipeline locally.
 
